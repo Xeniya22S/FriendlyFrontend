@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Медиаконтент в HTML — видео, аудио, фреймы. Теги video, audio, iframe. Тег source</title>
+</head>
+<body>
+
+<video
+        src="video/example.mp4"
+        controls
+        width="320"
+        height="240"
+></video>
+
+<video
+        src="video/example.mp4"
+        controls
+        width="240"
+        height="135"
+></video>
+
+<video>
+    <source src="video/example.mp4" type="video/mp4">
+    <source src="video/example.webm" type="video/webm">
+    <p>К сожалению, ваш браузер не поддерживает видео</p>
+</video>
+
+<video src="video/example.mp4" autoplay muted></video>
+
+<video src="video/example.mp4" controls loop></video>
+
+<video
+        src="video/example.mp4"
+        controls
+        poster="images/koala_climbing_tree.jpg"
+></video>
+
+<video src="video/example.mp4" playsinline></video>
+
+<audio controls>
+    <source src="audio/example.mp3" type="audio/mpeg">
+    <source src="audio/example.ogg" type="audio/ogg">
+    <p>К сожалению, ваш браузер не поддерживает встроенное аудио. Попробуйте
+    <a href="audio/example.mp3" download>скачать</a> файл.
+    </p>
+</audio>
+
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6afacc4a6bbeb42051095cdeea50dd63905efd7d3f3138a7dd5c41b7f1cab0f7&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=gP_wWHuQvJ5XYHv7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
