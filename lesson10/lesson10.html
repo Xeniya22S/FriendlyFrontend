@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML таблицы — теги table, tr, td и th. Структурные табличные теги thead, tbody, tfoot и caption</title>
+<link rel="stylesheet" href="lesson10.css">
+</head>
+
+<body>
+
+<table>
+   <tr>
+       <th>Имя</th>
+       <th>Номер заявки</th>
+   </tr>
+    <tr>
+       <td>Александр</td>
+       <td>101</td>
+   </tr>
+    <tr>
+        <td>Алексей</td>
+        <td>102</td>
+    </tr>
+    <tr>
+        <td>Михаил</td>
+        <td>103</td>
+    </tr>
+</table>
+
+    <table>
+        <caption>Расчетный лист услуг ЖКХ</caption>
+        <tr>
+            <td>Холодная вода</td>
+            <td>Куб.м</td>
+            <td>7</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+
+<table>
+    <caption>Расчетный лист услуг ЖКХ</caption>
+
+    <thead>
+    <tr>
+        <th rowspan="2">Вид услуги</th>
+        <th rowspan="2">Ед.изм</th>
+        <th colspan="2">Объем коммунальных услуг</th>
+        <th rowspan="2">Размер платы</th>
+    </tr>
+    <tr>
+        <th>На индивид.потребл.</th>
+        <th>На общедом.нужды</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Холодная вода</td>
+        <td>Куб.м.</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1000</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td>Итого к оплате за расчетный период</td>
+        <td colspan="4">9999</td>
+    </tr>
+    </tfoot>
+</table>
+
+
+
+</body>
+</html>
