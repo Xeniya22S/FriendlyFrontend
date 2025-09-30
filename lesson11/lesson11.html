@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML формы. Теги form, fieldset, legend, label и поле ввода input</title>
+</head>
+<body>
+
+<form action="/some-server-script-path" method="post">
+    <fieldset>
+        Группа полей ввода
+    </fieldset>
+
+    <fieldset>
+        Еще одна группа полей ввода
+    </fieldset>
+
+    <fieldset>
+        И еще одна группа полей ввода
+    </fieldset>
+
+</form>
+
+<form>
+    <fieldset>
+        <legend>Паспортные данные</legend>
+        ...
+    </fieldset>
+
+    <fieldset>
+        <legend>Работа</legend>
+        ...
+    </fieldset>
+
+    <fieldset>
+        <legend>Образование</legend>
+        ...
+    </fieldset>
+
+    <fieldset>
+        <legend>Контакты</legend>
+        ..
+    </fieldset>
+
+</form>
+
+<label for="login">Логин:</label>
+<input id="login" name="user-login" />
+
+<label for="review">Ваш отзыв:</label>
+<input id="review" name="user-review" value="Отлично" />
+
+<label for="login">Логин:</label>
+<input id="login" name="user-login" type="text" />
+
+</body>
+</html>
