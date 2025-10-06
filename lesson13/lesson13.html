@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы в HTML. Теги textarea, select, option, optgroup</title>
+</head>
+<body>
+
+<label for="comment">Ваш комментарий:</label>
+<textarea id="comment" name="user-comment"></textarea>
+
+<p>
+<label for="city">Ваш город</label>
+<select id="city" name="user-city">
+    <option value="moscow">Москва</option>
+    <option value="petersburg">Санкт-Петербург</option>
+</select>
+</p>
+
+<p>
+    <label for="city">Ваш город</label>
+    <select id="city" name="user-city" multiple>
+        <option value="moscow">Москва</option>
+        <option value="petersburg">Санкт-Петербург</option>
+    </select>
+</p>
+
+<p>
+    <form action="">
+    <label for="city">Ваш город</label>
+    <select id="city" name="user-city">
+        <option value="moscow">Москва</option>
+        <option value="petersburg" selected>Санкт-Петербург</option>
+    </select>
+<button>Send</button>
+</form>
+</p>
+
+<p>
+<form action="">
+    <label for="city">Ваш город</label>
+    <select id="city" name="user-city" reguired>
+        <option disabled value="" selected>Не выбрано</option>
+        <option value="moscow">Москва</option>
+        <option value="petersburg">Санкт-Петербург</option>
+    </select>
+    <button>Send</button>
+</form>
+</p>
+
+<label for="office">Выберите офис:</label>
+<select id="office" name="office">
+    <optgroup label="Центральный район">
+        <option value="center-1">ул.Пушкина, д.24</option>
+        <option value="center-2">пр.Ломоносова, д.1</option>
+        <option value="center-3">бул.Есенина, д.3</option>
+    </optgroup>
+    <optgroup label="Южный район">
+        <option value="south-1">ул.Ленина, д.5</option>
+        <option value="south-2">пл.Революции, д.20</option>
+    </optgroup>
+</select>
+
+</body>
+</html>
