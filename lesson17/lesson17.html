@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Глобальные атрибуты HTML — class, id, title, hidden, tabindex, lang и др. Комментарии в разметке</title>
+    <style>
+        p:focus {
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="page-title">Главная</h1>
+
+<section class="banner">
+    <h2 class="banner-title section-title">Заголовок баннера</h2>
+    <div class="banner-discription">Описание банера</div>
+</section>
+
+<p id="paragraph-1">Параграф 1</p>
+<p id="paragraph-2">Параграф 2</p>
+<p id="paragraph-3">Параграф 3</p>
+
+<a href="#contacts">Наши контакты</a>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h1 id="contacts">Контакты....</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>
+    <label for="user-name">Имя:</label>
+    <input id="user-name" />
+</p>
+
+<p>
+    <label for="user-message">Сообщение:</label>
+    <textarea id="user-message"></textarea>
+</p>
+
+<p>
+    <label for="city">Ваш город</label>
+    <select id="city">
+        <option value="moscow">Москва</option>
+        <option value="petersburg">Санкт-Петербург</option>
+    </select>
+
+<button type="button" title="Отправить">Send</button>
+</p>
+
+<p>Параграф 1</p>
+<p hidden>Параграф 2</p>
+<p>Параграф 3</p>
+
+
+
+<button>Кнопка 1</button>
+<button tabindex="-1">Кнопка 2</button>
+<button>Кнопка 3</button>
+<p tabindex="1">Параграф 1</p>
+<p tabindex="2">Параграф 2</p>
+<p tabindex="3">Параграф 3</p>
+
+<p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p contenteditable>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<style contenteditable>
+    body {
+        font-size: 16 px
+        color:red;
+    }
+
+    style {
+        display: block;
+        white-space: pre-wrap;
+    }
+</style>
+
+<textarea spellcheck="true">Правиряем ашибки</textarea>
+<textarea spellcheck="false">Не правиряем ашибки</textarea>
+<p spellcheck="true" contenteditable="true">И снова правиряем ашибки:)</p>
+
+<input data-mask="phone" data-region="ru" />
+
+<p data tooltip="текст подсказки...">
+    Lorem ipsum dolor sit.
+</p>
+
+<a href="/" data-some-special-link>Lorem ipsum</a>
+
+</body>
+</html>
