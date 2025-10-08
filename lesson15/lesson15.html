@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Семантические теги HTML: header, main, footer, section, aside, nav и остальные. Семантика HTML5</title>
+<link rel="stylesheet" href="lesson15.css">
+</head>
+
+<body>
+<!--шапка страницы -->
+<header class="container">
+    <div>Лого</div>
+
+    <!-- Меню навигации -->
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Главная</a>
+            </li>
+            <li>
+                <a href="/">Каталог</a>
+            </li>
+            <li>
+                <a href="/">О нас</a>
+            </li>
+        </ul>
+    </nav>
+
+   <div>Кнопка входа</div>
+</header>
+
+<!-- основная часть страницы -->
+<main>
+    <!-- первая секция -->
+    <section>
+        <!--шапка первой секции -->
+        <header>
+            <h2>Каталог товаров</h2>
+        </header>
+
+        <!--первая карточка товаров -->
+        <article>
+            <!--шапка блока карточки товара -->
+            <header>
+                <h3>Название товара 1</h3>
+                <div>Название категории товара</div>
+            </header>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </article>
+
+        <!-- вторая карточка товара -->
+        <article>
+            <!--шапка блока карточки товара -->
+            <header>
+                <h3>Название товара 2</h3>
+                <div>Категория товара</div>
+            </header>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </article>
+    </section>
+
+    <!-- вторая секция -->
+    <section>
+        <!--шапка второй секции -->
+        <header>
+            <h2>Новости</h2>
+        </header>
+
+        <!-- карточки новостей -->
+        <div class="cards-wrap">
+        <article class="card">Карточка новости 1 </article>
+        <article class="card">Карточка новости 2 </article>
+        <article class="card">Карточка новости 3 </article>
+            </div>
+        </section>
+
+    <!-- третья секция -->
+    <section>
+        <!--шапка третьей секции -->
+        <header>
+            <h2>Контакты</h2>
+        </header>
+
+        <div>
+            г.Москва, ул.1, д.39, стр.79
+            г.Москва, ул.1, д.39, стр.79
+            г.Москва, ул.1, д.39, стр.79
+            г.Москва, ул.1, д.39, стр.79
+        </div>
+    </section>
+
+    <!-- боковая часть страницы -->
+    <aside>Фильтры</aside>
+</main>
+
+<!-- нижняя часть страницы -->
+<footer>копирайт, доп.ссылки</footer>
+</body>
+</html>
