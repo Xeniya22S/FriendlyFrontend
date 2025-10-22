@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гайд по CSS-селекторам, расчёт специфичности в CSS. Приоритет и вес стилей</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<p class="text">Параграф с текстом</p>
+<p class="paragraph">Параграф с текстом</p>
+<p>Параграф с текстом</p>
+
+<a href="/">Ссылка</a>
+
+<ul>
+    <li>Элемент списка</li>
+    <li>Элемент списка</li>
+    <li>Элемент списка</li>
+</ul>
+
+<a class="text" href="/">Ссылка</a>
+
+<p id="my-first-unique-text">Первый параграф с текстом</p>
+<p id="my-second-unique-text">Второй параграф с текстом</p>
+<p id="my-third-unigue-text">Третий параграф с текстом</p>
+
+<p>
+    <input/>
+</p>
+
+<p>
+    <input
+    type="number"
+    placeholder="Возраст (числом)"
+    />
+</p>
+
+<p>
+    <input
+    type="tel"
+    placeholder="+7 (999) 999-99-99"
+    />
+</p>
+
+<p>
+    <input
+    type="email"
+    placeholder="example@mail.com"
+    />
+</p>
+
+<p>
+    <a href="https://www.google.com/">google через https</a>
+</p>
+
+<p>
+    <a href="http://www.google.com/">google через http</a>
+</p>
+
+<p>
+    <a href="https://yandex.kz/">yandex через https</a>
+</p>
+
+<p>
+    <a href="http://yandex.kz/">yandex через http</a>
+</p>
+
+<p>
+    <a href="https://www.google.ru">Google</a>
+</p>
+
+<p>
+    <a href="https://google.fr">Google</a>
+</p>
+
+<p>
+    <a href="https://www.google.de">Google</a>
+</p>
+
+<h1>Все изображения, на которых есть кот</h1>
+<div class="grid">
+    <img alt="точно кот" src="images/cat1.jpg" />
+    <img alt="однозначно некот" src="images/not%20cat6.jpg" />
+    <img alt="наверняка кот" src="images/cat2.jpg" />
+
+    <img alt="похож на кот" src="images/cat3.jpg" />
+    <img alt="выглядит как кот" src="images/cat4.jpeg" />
+    <img alt="пожалуй кот" src="images/cat5.jpg" />
+
+    <img alt="лис, некот" src="images/notcat7.jpg" />
+    <img alt="точно лис, некот" src="images/not%20cat8.jpg" />
+    <img alt="наверное, кот" src="images/cat9.jpg" />
+</div>
+
+<p>Просто текст</p>
+<span>Просто span</span>
+
+<section>
+    <p>
+        Текст внутри секции
+        <span>и внутри него sppan</span>
+    </p>
+</section>
+
+<button class="button">
+    Открыть меню
+</button>
+
+<button class="button is-active">
+    Закрыть меню
+</button>
+
+<input class="input is-invalid" />
+<div class="error-message">
+    Введенные данные некорректны!
+</div>
+
+
+
+</body>
+</html>

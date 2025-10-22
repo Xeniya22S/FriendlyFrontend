@@ -1,0 +1,24 @@
+p {
+    color: teal;
+}
+
+a {
+    color: hotpink;
+}
+
+section {
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: deepskyblue;
+}
+header {
+    color: teal;
+}
+
+
+body {
+    font-family: rubik, sans-serif;
+    font-size: 20px;
+    color: purple;
+    letter-spacing: 2px;
+}
