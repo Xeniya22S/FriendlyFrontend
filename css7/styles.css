@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 700;
+}
+
+.red-color-opacity {
+    color: rgb(255 0 0 / 0.75)
+}
+
+
+.green-color-opacity {
+    color: rgb(0 255 0 / 0.5)
+}
+
+.blue-color-opacity {
+color: rgb(0 0 255 / 0.25)
+}
+
+.yellow-color-opacity {
+    color: rgb(255 255 0)
+}
+
+.red-color {
+    color: #FF0000
+}
+
+.green-color {
+    color: #00FF00
+}
+
+.blue-color {
+    color: #0000FF
+}
+
+.dirty-yellow-color {
+    color: #999900
+}
+
+.red-color-opacity-2 {
+    color: #FF0000C7;
+}
+
+.red-color-hsl {
+    color: hsl(0 100% 50%)
+}
+
+.transparent-color {
+    color: transparent;
+}
+
+.current-color-border {
+    color: orange;
+    border: 2px solid currentColor;
+}
