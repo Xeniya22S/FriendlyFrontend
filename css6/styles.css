@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,400;700&display=swap');
+
+.custom-font {
+    font-family: 'Roboto';
+}
+
+.bold {
+    font-weight: 700;
+}
